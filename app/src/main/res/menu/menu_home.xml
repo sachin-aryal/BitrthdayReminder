@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Implementation.Activity.HomeActivity"
+    android:title="Menu"
+    android:theme="@style/AppTheme">
+<item android:id="@+id/home"
+        android:title="Home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always|withText"/>
+
+    <item android:id="@+id/addFriend"
+        android:title="Add Friend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_action_add_person"
+        app:showAsAction="always|withText" />
+
+    <item android:id="@+id/friendList"
+        android:title="Friend List"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_action_group"
+        app:showAsAction="always|withText"/>
+    <item
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_action_search"
+        android:title="Search"
+        android:id="@+id/searchFriend"
+        app:showAsAction="always|withText"/>
+    />
+
+
+</menu>

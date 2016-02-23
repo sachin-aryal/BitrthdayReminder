@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/lineLayout"
+    tools:context=".Implementation.Activity.HomeActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/friendSearch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Search by Name"
+        android:visibility="gone"
+        android:ems="8" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:text="Serch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/friendSearch"
+        android:onClick="SearchFriend"
+        android:ems="8"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4585f6"
+        android:textColor="#feffff"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:id="@+id/heading"
+        android:dividerHeight="30dp"
+        android:height="40dp"
+        android:layout_below="@+id/friendSearch"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"/>
+    <!--android:background="#b5b5b5"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/friend_list">
+    </ListView>
+
+    <TextView android:id="@+id/noResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/heading"/>
+
+
+</RelativeLayout>
